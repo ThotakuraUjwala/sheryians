@@ -1,0 +1,70 @@
+*{
+    margin:0px;
+    padding: 0px;
+    
+}
+#div1{
+    height: auto;
+    width: 50%;
+    margin-top: 7%;
+    margin-left: 4%;
+    font-size: 3rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1;
+}
+#help{
+    margin-top: 3%;
+    margin-left: 4%;
+}
+#factory{
+    color:rgb(32, 197, 215);
+}
+
+#offer_c{
+    font-size: 35px;
+    margin-left: 4%;
+    margin-top: 5%;
+
+}
+#offer{
+    font-size: 2.7rem;
+    margin: 4vw;
+}
+.courseoffer {
+    max-width: 90%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 5vw;
+    justify-content: center;
+}
+
+.course {
+    background-color: rgba(128, 128, 128, 0.259);
+    padding: 10px;
+    border-radius: 10px;
+}
+.c{
+    margin-bottom: 2vw;
+    /* background-color: red;  */
+     /* height: auto;  */
+}
+.discount{
+    margin-top: 2vw;
+    /* background-color: blue; */
+}
+
+.course img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+.discount button{
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.6rem;
+    background-color:rgb(35, 131, 142) ;
+    /* height: auto; */
+}

@@ -1,0 +1,91 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}
+    <title></title>
+    {% endblock title %}
+    <link rel="icon" href="{% static 'lion.webp' %}">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    {% block css %}
+ 
+    {% endblock css %}
+
+    {% block js %}
+
+    {% endblock js %}
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><img src="{% static 'lion.webp' %}" alt="" id="lion"> Sheriyans Coding School</div>
+        <ul class="nav-links">
+            <li><a href="{% url 'app1:home' %}">Home</a></li>
+            <li><a href="{% url 'app1:courses' %}">Courses</a></li>
+            <li><a href="{% url 'app1:bootcamp' %}">Bootcamp(Kodr)</a></li>
+            <li><a href="{% url 'app1:callback' %}">Request callback</a></li>
+            <li><button style="background-color:rgb(32, 197, 215);height:40px;width:80px;font-size:20px"><a href="{% url 'app1:signin' %}" id="signin">Signin</a></button></li>
+        </ul>
+    </nav>
+
+    
+    {% block body %}
+ 
+    {% endblock body %}
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section social">
+                <img src="{% static 'lion.webp' %}" alt="" style="height:60px;width:50px">
+                <h2>Lets connect with our socials</h2>
+                <div class="social-icons">
+                    <a href="https://discord.com/invite/D23JkFqrgz"><img src="https://cdn-icons-png.flaticon.com/128/5968/5968756.png" alt="Discord"></a>
+                    <a href="https://www.instagram.com/sheryians_coding_school"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram"></a>
+                    <a href="https://x.com/i/flow/login?redirect_after_login=%2Fsheryians_"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"></a>
+                    <a href="https://www.linkedin.com/company/the-sheryians-coding-school/?originalSubdomain=in"><img src="https://cdn-icons-png.flaticon.com/512/733/733561.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+
+            <div class="footer-section links">
+                <h2>Company</h2>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and Condition</a></li>
+                    <li><a href="#">Pricing and Refund</a></li>
+                    <li><a href="">Hire From Us</a></li>
+                    <li><a href="">Big Bounty</a></li>
+
+                </ul>
+            </div>
+            <div class="footer-section links">
+                <h2>Community</h2>
+                <ul>
+                    <li><a href="">Inertia</a></li>
+                    <li><a href="">Discord</a></li>
+                </ul>
+            </div>
+            <div class="footer-section links">
+                <h2>Get in Touch</h2>
+                <ul>
+                    <li><a href="">+91 9876543210</a></li>
+                    <li><a href="">+91 9876543219</a></li>
+                    <li><a href="">hello@sheriyans.com</a></li>
+                    <li><a href="">23-B, Indrapuri, Sector C, Bhopal(MP) 462021</a></li>
+                </ul>
+            </div>
+            
+
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Sheriyans Coding School | All Rights Reserved</p>
+        </div>
+    </footer>
+   
+
+    
+</body>
+</html>

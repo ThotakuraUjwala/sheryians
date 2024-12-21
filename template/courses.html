@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+    <title>Courses | Sheriyans</title>
+{% endblock title %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'courses.css' %}">
+{% endblock css %}
+
+{% block body %}
+<div id="div1">
+    <h1>We're not a <span id="factory">course factory.</span></h1>
+</div>
+
+<h1 id="help">We focus on courses that really help.</h1>
+<p id="offer_c">Courses which do work &#8595;</p>
+
+<div class="courseoffer">
+  <div class="course">
+    <div class="c">
+      <img src="{% static 'Front-End.webp' %}" alt="">
+      <h2>Front-End Domination: Create Anything with Code</h2>
+      <p>Hindi</p>
+    </div>
+      <div class="discount">
+        <h4 style="color: rgb(35, 131, 142);">Limited Time Discount</h4>
+        <h1>&#8377;4999 <strike>&#8377;5000</strike></h1>
+        <button>View Details</button>
+      </div>
+      
+  </div>
+  <div class="course">
+    <div class="c">
+      <img src="{% static 'backend.webp' %}" alt="">
+      <h2>Back-End Domiantion: Create effective Back-End</h2>
+      <p>English</p>
+    </div>
+      <div class="discount">
+        <h4 style="color: rgb(35, 131, 142);">Limited Time Discount</h4>
+        <h1>&#8377;4999 <strike>&#8377;5000</strike></h1>
+        <button>View Details</button>
+      </div>
+      
+  </div>
+  <div class="course">
+    <div class="c">
+      <img src="{% static 'apt.webp' %}" alt="">
+      <h2>Aptitude & Reasoning for campus placements</h2>
+      <p>English</p>
+    </div>
+      <div class="discount">
+        <h4 style="color: rgb(35, 131, 142);">Limited Time Discount</h4>
+        <h1>&#8377;1499 <strike>&#8377;2000</strike></h1>
+        <button>View Details</button>
+      </div>
+  </div>
+
+  <div class="course">
+    <div class="c">
+      <img src="{% static 'java.webp' %}" alt="">
+      <h2>Java & DSA Domination</h2>
+      <p>English</p>
+    </div>
+      <div class="discount">
+        <h4 style="color: rgb(35, 131, 142);">Limited Time Discount</h4>
+        <h1>&#8377;9999 <strike>&#8377;12000</strike></h1>
+        <button>View Details</button>
+      </div>
+      
+  </div>
+  <div class="course">
+    <div class="c">
+      <img src="{% static 'three.webp' %}" alt="">
+      <h2>Three.ja Domination</h2>
+      <p>English</p>
+    </div>
+      <div class="discount">
+        <h4 style="color: rgb(35, 131, 142);">Limited Time Discount</h4>
+        <h1>&#8377;12999 <strike>&#8377;15000</strike></h1>
+        <button>View Details</button>
+      </div>
+
+  </div>
+</div>
+{% endblock body %}

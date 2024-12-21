@@ -1,0 +1,142 @@
+{% extends 'base.html' %} {% load static %} {% block title %}
+<title>Sheriyans coding school</title>
+{% endblock title %} 
+{% block css %}
+<link rel="stylesheet" href="{% static 'home.css' %}" />
+{% endblock css %} 
+{% block body %}
+
+<div id="main">
+  <h1>
+    <span>We only </span>
+    <span style="color: rgb(32, 197, 215);">teach</span><br>
+    What we are really <br> really <span><i>good</i></span> at. <br>
+  </h1>
+</div>
+<div id="small">
+  <p id="small1">
+    Get ready to
+    <span style="color: rgb(32, 197, 215)">accelerate your career</span> with
+    customized courses and leave your mark in the tech industry
+  </p>
+</div>
+<div class="mainbtn">
+<button class="btn">
+  <a href="{% url 'app1:courses' %}" id="impact">Check Courses-Make an Impact</a>
+</button>
+</div>
+<div class="feedback">
+  <div>
+    <h1>25k+</h1>
+    <h3>Students taught</h3>
+  </div>
+  <div>
+    <h1>20+</h1>
+    <h3>Instructors</h3>
+  </div>
+  <div>
+    <h1>431K+</h1>
+    <h3>Youtube Subs.</h3>
+  </div>
+</div>
+
+<div id="maindiv">
+  <div id="div1">
+    <h1>We do whatever it takes to help you</h1>
+    <h1 style="color: rgb(32, 197, 215);">understand the concepts</h1>
+  </div>
+  <div>
+  <iframe
+    width="960"
+    height="535"
+    src="https://www.youtube.com/embed/60SRAWmMXyc"
+    title="You Are Not Yet Ready | Placements | Open Source"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen></iframe>
+    </div>
+</div>
+<div class="mainbtn">
+<button class="btn">
+  <a href="{% url 'app1:courses' %}" id="impact">Explore free learning</a>
+</button></div>
+
+<h1 id="offer">Courses offered.</h1>
+<div class="courseoffer">
+  <div class="course">
+    <div class="c">
+      <img src="{% static 'Front-End.webp' %}" alt="">
+      <h2>Front-End Domination: Create Anything with Code</h2>
+      <p>Hindi</p>
+    </div>
+      <div class="discount">
+        <h4 style="color: rgb(35, 131, 142);">Limited Time Discount</h4>
+        <h1>&#8377;4999 <strike>&#8377;5000</strike></h1>
+        <button>View Details</button>
+      </div>
+      
+  </div>
+  <div class="course">
+    <div class="c">
+      <img src="{% static 'backend.webp' %}" alt="">
+      <h2>Back-End Domiantion: Create effective Back-End</h2>
+      <p>English</p>
+    </div>
+      <div class="discount">
+        <h4 style="color: rgb(35, 131, 142);">Limited Time Discount</h4>
+        <h1>&#8377;4999 <strike>&#8377;5000</strike></h1>
+        <button>View Details</button>
+      </div>
+      
+  </div>
+  <div class="course">
+    <div class="c">
+      <img src="{% static 'apt.webp' %}" alt="">
+      <h2>Aptitude & Reasoning for campus placements</h2>
+      <p>English</p>
+    </div>
+      <div class="discount">
+        <h4 style="color: rgb(35, 131, 142);">Limited Time Discount</h4>
+        <h1>&#8377;1499 <strike>&#8377;2000</strike></h1>
+        <button>View Details</button>
+      </div>
+  </div>
+
+  <div class="course">
+    <div class="c">
+      <img src="{% static 'java.webp' %}" alt="">
+      <h2>Java & DSA Domination</h2>
+      <p>English</p>
+    </div>
+      <div class="discount">
+        <h4 style="color: rgb(35, 131, 142);">Limited Time Discount</h4>
+        <h1>&#8377;9999 <strike>&#8377;12000</strike></h1>
+        <button>View Details</button>
+      </div>
+      
+  </div>
+  <div class="course">
+    <div class="c">
+      <img src="{% static 'three.webp' %}" alt="">
+      <h2>Three.ja Domination</h2>
+      <p>English</p>
+    </div>
+      <div class="discount">
+        <h4 style="color: rgb(35, 131, 142);">Limited Time Discount</h4>
+        <h1>&#8377;12999 <strike>&#8377;15000</strike></h1>
+        <button>View Details</button>
+      </div>
+
+  </div>
+</div>
+
+<div id="comp">
+    <h1>Top <span style="color:rgb(32, 197, 215)">companies</span> our students are working with</h1>
+    <div><img src="{% static 'netflix.webp' %}" alt="."></div>
+</div>
+<div class="mainbtn">
+<button class="btn"><a href="{% url 'app1:courses' %}" id="explore">Explore Courses</a></button>
+</div>
+
+{% endblock body %}

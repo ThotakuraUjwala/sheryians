@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+    <title>Signin | Sheriyans</title>
+{% endblock title %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'signin.css' %}">
+{% endblock css %}
+
+
+{% block js %}
+    <script src="{% static 'signin.js' %}"></script>
+{% endblock js%}
+
+{% block body %}
+
+<div class="container">
+
+    <div class="sign-in-container">
+        <h2>Sign In</h2>
+        <form>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email address">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password here">
+            </div>
+            <button type="submit">Continue</button>
+        </form><br>
+        <p>Or</p>
+        <div class="social-login">
+            <button class="google-btn">
+                <img src="{% static 'search.png' %}" alt="Google Logo" style="height:20px;width:20px">
+                Continue with Google
+            </button>
+            <br>
+            <button class="create-account-btn">
+                <img src="{% static 'add-user.png' %}" alt="User Icon" style="height:30px;width:30px">Create a New Account
+            </button>
+        </div>
+    </div>
+</div>
+
+{% endblock body %}
+
+
+    

@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    width: 100%;
+}
+
+header pre {
+    font-size: 2rem;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+#small1 {
+    text-align: center;
+    font-size: 1rem;
+    margin: 1rem auto;
+    max-width: 600px;
+}
+
+.btn, .btn2 {
+    background-color: rgb(35, 131, 142);
+    color: black;
+    padding: 0.8rem 1.5rem;
+    border-radius: 20px;
+    text-align: center;
+    display: block;
+    margin: 1rem auto;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.feedback {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.feedback div {
+    flex: 1;
+    margin: 0 1rem;
+}
+
+#pre2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 2rem auto;
+}
+
+iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 300px;
+    margin: 2rem auto;
+    display: block;
+}
+
+.courseoffer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.course {
+    background: rgba(128, 128, 128, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    max-width: 300px;
+}
+
+.course img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.discount, .details {
+    background: rgb(32, 197, 215);
+    color: black;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+    display: inline-block;
+    text-decoration: none;
+}
+
+#comp {
+    text-align: center;
+    margin: 2rem auto;
+}
+
+#comp img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    pre {
+        font-size: 1.2rem;
+    }
+
+    iframe {
+        height: 200px;
+    }
+
+    .feedback {
+        flex-direction: column;
+    }
+
+    .courseoffer {
+        flex-direction: column;
+    }
+}
