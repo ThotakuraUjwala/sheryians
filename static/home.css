@@ -37,7 +37,7 @@ body {
     /* margin:2vw; */
 }
 .mainbtn{
-    height: 10vh;
+    height: auto;
     width: auto;
     text-align: center;
     /* background-color: red; */
@@ -45,7 +45,7 @@ body {
 
 }
 .btn,.btn2 {
-    height: 7vh;
+    height: 4rem;
     width: auto;
     font-size: 1.4rem;
     background-color: rgb(35, 131, 142);
