@@ -29,15 +29,15 @@ body {
 }
 
 .logo {
-    font-size: 1.6em;
+    font-size: 1.6rem;
     font-weight: bold;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 60px;
-    font-size: 22px
+    gap: 3vw;
+    font-size: 1.5rem
     
 }
 
